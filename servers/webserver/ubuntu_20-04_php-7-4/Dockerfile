@@ -5,3 +5,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 \
 RUN apt-get install -y php7.4 composer
 RUN apt-get install -y php7.4-curl php7.4-gd php7.4-imagick php7.4-xml php7.4-zip php7.4-mysql
 RUN a2enmod rewrite headers
+WORKDIR /var/www/html
+EXPOSE 80
